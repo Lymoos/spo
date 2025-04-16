@@ -1,0 +1,103 @@
+# Лог-файл сервера с разными сообщениями
+INFO: Server started successfully
+ERROR: Connection timeout while connecting to 192.168.1.100
+WARN: Low disk space on /dev/sda1
+SUCCESS: Backup completed at 2024-02-24 23:59:59
+INFO: New user registered - user@example.com
+
+# JSON-данные с ошибками формата
+{ key1:value1, key2: value2, key3: "value3" }
+{ "correct_key": "value", "another_key":12345 }
+
+# CSV-данные
+1,John Doe,john.doe@example.com,35,New York
+2,Jane Smith,jane.smith@domain.com,28,Los Angeles
+3,Bob Brown,bob.brown@somewhere.org,45,Chicago
+
+# HTML-код с тегами, которые нужно удалить
+<html>
+<head><title>Sample Page</title></head>
+<body>
+    <h1>Welcome to the site</h1>
+    <p>This is a paragraph with some <b>bold</b> text.</p>
+    <a href="https://example.com">Click here</a>
+</body>
+</html>
+
+# Даты в разных форматах
+2024-02-24
+24/02/2024
+Feb 24, 2024
+15:30:45
+03:45 PM
+
+# IP-адреса
+127.0.0.1 - Localhost
+192.168.1.1 - Router
+255.255.255.255 - Broadcast
+
+# Повторяющиеся строки (для удаления дубликатов)
+Repeat me
+Repeat me
+Repeat me
+
+# Перемешанный текст для сложных замен
+The quick brown fox jumps over the lazy dog.
+The dog and the fox are friends.
+Here is some mixed-case Text to Test CASE-sensitive Replacements.
+
+# SQL-запросы, в которых нужно заменить ключевые слова
+SELECT * FROM users WHERE username='admin';
+update users set password='12345' where username='admin';
+DELETE FROM logs WHERE date<'2024-01-01';
+
+# Пароли, которые нужно скрыть
+username=admin, password=supersecure
+user=root, password=rootpass123
+api_key=abcdef1234567890
+
+# Данные с пробелами и табуляцией
+   Some text with leading spaces
+Text with trailing spaces      
+	Text with a tab at the beginning
+Another line	with tabs	in the middle	
+
+# Разные строки для замены слов
+The Old version is outdated. Please update old to new.
+This is just another Old phrase that needs an update.
+Replace foo with bar everywhere in this text.
+A simple test: foo bar foo bar foo.
+
+# Строки с разделителями
+apple:banana:cherry
+one,two,three,four
+key=value&param=123&flag=true
+
+# Длинные строки (для обрезки до 80 символов)
+This is a very long line that exceeds eighty characters, so we might need to truncate it for better readability.
+Another long line that contains many words and should be limited to a specific width.
+
+# Маркеры для работы с диапазонами
+<start>
+This is a multiline block of text.
+It contains multiple lines that should be processed together.
+Some text inside the block.
+<end>
+
+# Случайные строки для разных задач
+Line with a trailing semicolon;
+A line with a number: 9876543210
+Another line with digits: 42
+Multiple    spaces   between    words
+
+# Переносы строк
+This line is continued \
+on the next line \
+and should be merged.
+
+# Тестирование обработки регистра
+test
+Test
+TEST
+tEsT
+TeSt
